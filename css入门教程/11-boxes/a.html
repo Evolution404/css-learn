@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>A</title>
+    <style type="text/css" media="screen">
+      ul{
+        border: 10px solid lightblue;
+        width: 100px;
+      } 
+      #position{
+        position: relative;
+        font: bold 100px sans-serif;
+        <!--font-size: 100px;-->
+      }
+      #forward, #back{
+        position: absolute;
+        margin: 0;
+        top: 0;
+        left: 0;
+      }
+      #forward{
+        color: blue;
+      }
+      #back{
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+    <div id="position">
+      <p id="forward">/</p>
+      <p id="back">\</p>
+    </div>
+  </body>
+</html>

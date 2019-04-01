@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>box-sizing</title>
+    <style type="text/css" media="screen">
+      .box{
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        margin: 20px 0;
+      }
+      #box2{
+        border: 10px solid red;
+        padding: 20px;
+      }
+      #box4{
+        box-sizing: border-box;
+        border: 10px solid red;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--box-sizing可以设置一个元素的width指定的到底是那一部分-->
+    <div id="div1">
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2"></div>
+    </div>
+    <div id="div2">
+      <div class="box" id="box3"></div>
+      <div class="box" id="box4"></div>
+    </div>
+  </body>
+</html>
